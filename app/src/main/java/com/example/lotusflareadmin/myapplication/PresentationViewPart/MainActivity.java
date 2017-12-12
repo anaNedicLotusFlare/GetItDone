@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements Screen {
         toolbar = findViewById(R.id.toolbar);
 
         return toolbar;
-
     }
 
     @Override
