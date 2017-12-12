@@ -1,6 +1,5 @@
-package com.example.lotusflareadmin.myapplication;
+package com.example.lotusflareadmin.myapplication.PresentationViewPart;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,8 +7,10 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.example.lotusflareadmin.myapplication.R;
+
 /**
- * Created by LotusFlareAdmin on 12/9/2017.
+ * Created by Ana Nedic.
  */
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
@@ -39,7 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public int getItemCount() {
         return mNumberItems;
-    }
+    } //todo: fetch from cursor
 
     public static class RecyclerViewHolder extends RecyclerView.ViewHolder {
 

@@ -1,17 +1,20 @@
 <resources>
 
-    <!-- Base application theme. No action bar, we will make app bar, a.k.a. toolbar needed for MATERIAL DESIGN! -->
+    <!-- Base application theme. No action bar, we will make app bar,
+    a.k.a. toolbar needed for material design! -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="ToolbarStyle" parent="Theme.AppCompat">
-        <item name="android:background">@color/colorAccent</item>
-        <item name="android:textColorPrimary">@color/colorPrimary</item>
-        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="niceFont"> <!-- populated for API>16-->
     </style>
 
 </resources>

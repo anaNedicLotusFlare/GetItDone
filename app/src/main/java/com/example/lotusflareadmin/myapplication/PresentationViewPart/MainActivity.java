@@ -1,7 +1,6 @@
-package com.example.lotusflareadmin.myapplication;
+package com.example.lotusflareadmin.myapplication.PresentationViewPart;
 
-import android.app.Activity;
-import android.os.Build;
+import android.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +11,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.lotusflareadmin.myapplication.R;
+
+/**
+ * Created by Ana Nedic.
+ */
+public class MainActivity extends AppCompatActivity implements Screen {
     private Toolbar toolbar;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -55,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
                     "You selected language.",
                     Toast.LENGTH_LONG
                     ).show();
+        } else if (resId == R.id.about) {
+            DialogFragment df = new ShowAboutDialog();
+            df.show(getFragmentManager(),"dialog");
         }
         return true;
     }
