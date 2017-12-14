@@ -1,9 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Get It Done</string>
-    <string name="lf_logo">LotusFlare logo</string>
     <string name="language">Language</string>
     <string name="aboutTitle">About LF Task Manager</string>
-    <string name="OK">OK</string>
     <string name="aboutText">Awesome task manager!</string>
     <string name="about">About</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.lotusflareadmin.myapplication.PresentationViewPart;
+package com.example.lotusflareadmin.myapplication.main.view;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -18,14 +18,6 @@ public class ShowAboutDialog extends DialogFragment {
         // Use the Builder class for convenient dialog construction
         String dialogTitle = getString(R.string.aboutTitle);
         String dialogMessage = getString(R.string.aboutText);
-
-//        //Optional requires API 24
-//        if (savedInstanceState.get("dialogTitle") != null) {
-//            dialogTitle = getString(savedInstanceState.get("dialogTitle").toString();
-//        }
-//        if (savedInstanceState.get("dialogMessage") != null) {
-//            dialogMessage = savedInstanceState.get("dialogMessage").toString();
-//        }
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(dialogTitle).setMessage(dialogMessage)

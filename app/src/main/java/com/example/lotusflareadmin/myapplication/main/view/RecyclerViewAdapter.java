@@ -1,4 +1,4 @@
-package com.example.lotusflareadmin.myapplication.PresentationViewPart;
+package com.example.lotusflareadmin.myapplication.main.view;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import com.example.lotusflareadmin.myapplication.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
 
-    private int mNumberItems;
+    private final int mNumberItems;
 
     public RecyclerViewAdapter(int mNumberItems) {
         this.mNumberItems = mNumberItems;
@@ -40,12 +40,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public int getItemCount() {
         return mNumberItems;
-    } //todo: fetch from cursor
+    } //todo: fetch from db
 
     public static class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView taskName;
-        private CheckBox isTaskDone;
+        private final TextView taskName;
+        private final CheckBox isTaskDone;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
